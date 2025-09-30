@@ -6,8 +6,8 @@ import { RiLoader5Fill } from "@remixicon/react";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/sidebar";
 import { auth } from "@/lib/auth";
-import MainContent from "./_common/main-content";
-import NoteDialog from "@/components/note-dialog/note-dialog";
+// import MainContent from "./_common/main-content";
+// import NoteDialog from "@/components/note-dialog/note-dialog";
 
 export default async function DashboardLayout({
   children,
@@ -35,8 +35,8 @@ export default async function DashboardLayout({
           {/* {App Sidebar} */}
           <AppSidebar />
           <SidebarInset className="relative overflow-x-hidden pt-0">
-            <MainContent>{children}</MainContent>
-            <NoteDialog />
+            {/* <MainContent>{children}</MainContent>
+            <NoteDialog /> */}
           </SidebarInset>
         </SidebarProvider>
       </NuqsAdapter>
